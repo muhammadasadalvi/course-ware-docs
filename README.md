@@ -1,1 +1,1 @@
-# this is test heading for markdown
+# CSC101 - Information and Communication Technologies
