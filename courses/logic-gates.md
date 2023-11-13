@@ -4,22 +4,13 @@ Logic gates are fundamental building blocks of digital circuits and electronic s
 
 There are several types of logic gates, each with a specific logical function:
 
-1. **AND Gate:**
-   - Output is HIGH (1) only when all inputs are HIGH (1).
-   - Truth table: 
+1. **OR Gate:**
+   - In an OR gate, the output of an OR gate attains state 1 if one or more inputs attain state 1.
+   - Boolean Expression
+   ```Y = A + B``` Read as Y equals A OR B
 
-     ```
-     A | B | Output
-     --|---|-------
-     0 | 0 |   0
-     0 | 1 |   0
-     1 | 0 |   0
-     1 | 1 |   1
-     ```
-
-2. **OR Gate:**
-   - Output is HIGH (1) when at least one input is HIGH (1).
    - Truth table:
+
      ```
      A | B | Output
      --|---|-------
@@ -29,8 +20,25 @@ There are several types of logic gates, each with a specific logical function:
      1 | 1 |   1
      ```
 
+2. **AND Gate:**
+   - In the AND gate, the output of an AND gate attains state 1 if and only if all the inputs are in state 1.
+   - Boolean Expression
+   ```Y = A . B``` Read as Y equals A AND B
+
+   - Truth table:
+     ```
+     A | B | Output
+     --|---|-------
+     0 | 0 |   0
+     0 | 1 |   0
+     1 | 0 |   0
+     1 | 1 |   1
+     ```
+
 3. **NOT Gate (Inverter):**
-   - Output is the opposite (complement) of the input.
+   - In a NOT gate, the output of a NOT gate attains state 1 if and only if the input does not attain state 1.
+   - Boolean Expression
+   ```Y = \overline{A}```
    - Truth table:
      ```
      A | Output
@@ -41,6 +49,8 @@ There are several types of logic gates, each with a specific logical function:
 
 4. **NAND Gate:**
    - Output is LOW (0) only when all inputs are HIGH (1).
+   - Boolean Expression
+   ```Y = A + B```
    - Truth table:
      ```
      A | B | Output
@@ -53,6 +63,8 @@ There are several types of logic gates, each with a specific logical function:
 
 5. **NOR Gate:**
    - Output is LOW (0) when at least one input is HIGH (1).
+   - Boolean Expression
+   ```Y = A + B```
    - Truth table:
      ```
      A | B | Output
@@ -65,6 +77,8 @@ There are several types of logic gates, each with a specific logical function:
 
 6. **XOR Gate (Exclusive OR):**
    - Output is HIGH (1) when the number of HIGH inputs is odd.
+   - Boolean Expression
+   ```Y = A + B```
    - Truth table:
 
      ```
